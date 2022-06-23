@@ -28,6 +28,7 @@ const UserUpdate = (props) => {
 
     const updateUser = (e)=>{
         e.preventDefault();
+        console.log(id)
         axios.put(`http://localhost:8000/api/user/${id}`,{firstName, lastName, email, password})
             .then(res => {
                 console.log(res.data);

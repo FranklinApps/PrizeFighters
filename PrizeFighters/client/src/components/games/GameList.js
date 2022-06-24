@@ -19,8 +19,10 @@ const GameList = (props)=> {
             {
                 game.map((games, index)=> {
                     return(
-                        <div key={index}> <p key={index}>
-                        Game Title: {games.gameTitle} 
+                        <div key={index} className='list'> <p key={index}>
+                        Game Title: {games.gameTitle} <br/>
+                        Year: {games.releaseDate}<br/>
+                        Consoles: {games.console}
                             </p></div>
                     )
                     

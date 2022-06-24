@@ -34,8 +34,11 @@ const UserInfo = (props) => {
     return(
         <div className="UserInfo-component">
             <h2>Welcome, {oneUser.firstName} {oneUser.lastName} </h2>
+            <p>Name: {oneUser.firstName} {oneUser.lastName}</p>
             <p>Email: {oneUser.email}</p> 
             <button onClick={deleteHandler}>Delete {oneUser.firstName} {oneUser.lastName}</button>
+            <br/>
+            <a href='/'> <button>Return Home</button></a>
         </div>
     )
 

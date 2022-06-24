@@ -67,7 +67,7 @@ const UserForm = (props) => {
                     <input onChange={(e)=> setPassword(e.target.value)} value={password} type='password' name='password'/>
                     {errors.password ? <p>{errors.password.message}</p>:null}
                 </p>
-            <input type='submit' value='Create'/>
+            <input type='submit' value='Create' className='blank'/>
             </form>
             
             

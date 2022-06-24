@@ -375,6 +375,7 @@ function GameCalender() {
                 })}
             </div>
         </Popup>
+        <a href='/'><button>Home</button></a>
     </div>
 }
 

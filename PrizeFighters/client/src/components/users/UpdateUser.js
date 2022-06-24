@@ -3,14 +3,13 @@ import axios from 'axios';
 import {useNavigate, useParams } from "react-router-dom";
 
 const UserUpdate = (props) => {
-    const {id} = useParams;
+    const {id} = useParams();
     const [firstName, setFirstName] = useState();
     const [lastName, setLastName] = useState();
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
     const navigate = useNavigate();
     const [errors, setErrors] = useState([]);
-
 
     useEffect (()=>{
         console.log('please', id)
@@ -21,7 +20,6 @@ const UserUpdate = (props) => {
                 setLastName(res.data.lastName);
                 setEmail(res.data.email);
                 setPassword(res.data.password);
-
             })
             .catch(err => console.log(err))
     }, [id])
@@ -102,7 +100,7 @@ const UserUpdate = (props) => {
                     <br/>
                     <button onClick={deleteHandler}> Remove {firstName} from Website </button>
                 </p>
-                <input type="submit"/>
+                <button><input type="submit" className="blank"/></button>
             </form>
 
         </div>

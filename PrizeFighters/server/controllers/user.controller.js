@@ -24,7 +24,7 @@ module.exports ={
             })
     },
 
-    getOneUser:(req,res)=> {
+    getOneUser:(req, res)=> {
         User.findOne({_id: req.params.id})
             .then((oneUser)=> res.json(oneUser))
             .catch((err)=> {

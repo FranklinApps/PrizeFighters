@@ -29,15 +29,20 @@ const UserList = (props) => {
                 user.map((users, index)=> {
                     return(
                         <div className='inner'key={index}> <p key={index}> 
-                        Name: {users.firstName} <br/>
-                        Type: {users.lastName} <br/></p>
-                            <Link to={`/User/${users._id}`}> More Info on {users.firstName} </Link><br/><br/>
-                            <Link to={'/User/edit/' + users._id}> Edit   {users.lastName}  </Link><br></br>
+                        First Name: {users.firstName} <br/>
+                        Last Name: {users.lastName} <br/>
+                        Email: {users.email}</p>
+
+                            <Link to={`/User/${users._id}`}> <button>More Info on {users.firstName} </button></Link><br/><br/>
+                            <Link to={'/User/edit/' + users._id}> <button>Edit   {users.lastName}</button>  </Link><br/><br/>
                             <button onClick={()=> deleteUser(users._id)}> Delete </button>
                         </div>
+
                 )})
 
             }
+            <br/>
+            <a href='/'><button>Go Home</button></a>
         </div>
     )
 }

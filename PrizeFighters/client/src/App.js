@@ -1,17 +1,17 @@
 import React from 'react';
+import ReactDOM from 'react-dom'
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Main from '../src/views/Main.js'
 import UserForm from './components/users/UserForm';
-import UserUpdate from './components/users/UpdateUser';
 import UserInfo from './components/users/UserInfo';
 import UserHome from '../src/views/userHome'
 import GameList from './components/games/GameList';
 import GameCalender from './components/schedules/Schedule.js';
-import UpdateUserPage from '../src/views/UpdateUserPage.js'
+import UpdateUser from './components/users/UpdateUser.js'
 import { Eventcalender } from "@mobiscroll/react";
 import "@mobiscroll/react/dist/css/mobiscroll.min.css";
 import UserLogin from './components/users/UserLogin.js';
-import '../src/images/DragonBallFighterz.jpg'
+import Schedule from './components/schedules/Schedule';
 import './App.css';
 
 
@@ -22,7 +22,7 @@ function App() {
       <Routes>
         <Route element={<UserForm/>} path='/user/new'/>
         <Route element={<UserLogin/>} path='/user/login'/>
-        <Route element={<UpdateUserPage/>} path='/user/edit/:id'/>
+        <Route element={<UpdateUser/>} path='/user/edit/:id'/>
         <Route element={<UserInfo/>} path='/user/:id'/>
         <Route element={<UserHome/>} path='/users'/>
         <Route element={<GameList/>} path='/games'/>

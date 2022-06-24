@@ -1,17 +1,22 @@
 import axios from 'axios';
 import {useState} from 'react'
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
 const [password, setPassword] = useState("");
 const [email, setEmail] = useState("");
-    
+const navigate = useNavigate();
+
+
 const handleSubmit = async (e) =>{
-  console.log(".....");
+  console.log(email);
      e.preventDefault();
     const res =  await axios.post("/api/user", {
      email,
      password,
-    });
+    }
+    .then(navigate('/')));
+    
     console.log(res)
     };
     return(

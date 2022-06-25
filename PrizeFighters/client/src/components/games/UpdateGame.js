@@ -61,7 +61,7 @@ const UpdateGame = (props) => {
             })}
             <form onSubmit={updateGame} className='formlist'>
                 <p>
-                    <label>GameTitle: </label><br/>
+                    <label>Game Title: </label><br/>
                     <input type="text"
                     name="gameTitle"
                     value={gameTitle}

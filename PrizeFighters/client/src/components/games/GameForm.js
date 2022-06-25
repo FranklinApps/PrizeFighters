@@ -43,7 +43,7 @@ const GameForm = (props) => {
             {errors.map((error, index)=>{
                 return(<p key={index}>{error}</p>)
             })}
-            <form onSubmit={onSubmitHandler}>
+            <form onSubmit={onSubmitHandler} className="formlist">
                 <p>
                     <label>Game Title: </label><br/>                    
                     <input onChange={(e)=> setGameTitle(e.target.value)} value={gameTitle} type='text' name='gameTitle'/>

@@ -17,10 +17,13 @@ const Main =(props) => {
     
 return (
     <div>
-        <a href="/user/new" class="button"><button>register</button></a>
-        <a href="/users" class="button"><button>users</button></a>
-        <a href="/user/login" class="button"><button>login</button></a>
-        <a href="/user/calender" class="button"><button>calendar</button></a>
+        <a href="/user/new" class="button"><button>Register</button></a>
+        <a href="/users" class="button"><button>Users</button></a>
+        <a href="/user/login" class="button"><button>Login</button></a>
+        <a href="/user/calender" class="button"><button>Calendar</button></a>
+        <a href="/games/new" class="button"><button>New Game</button></a>
+        
+
         <h1>PrizeFighters</h1>
         <h3>Available Titles</h3> 
         

@@ -12,7 +12,7 @@ const GameSchema = new mongoose.Schema({
         "Release date is required"]
     },
     
-    console:{
+    station:{
         type: String,
         required: [true,
         "platform is required"]

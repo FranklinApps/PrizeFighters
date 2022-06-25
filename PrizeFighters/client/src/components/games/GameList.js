@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import axios from 'axios';
-
+import { Link } from 'react-router-dom';
 
 const GameList = (props)=> {
     const {game, setGame} = props;
@@ -22,8 +22,10 @@ const GameList = (props)=> {
                         <div key={index} className='list'> <p key={index}>
                         Game Title: {games.gameTitle} <br/>
                         Year: {games.releaseDate}<br/>
-                        Consoles: {games.console}
-                            </p></div>
+                        Consoles: {games.station}<br/>
+                        <Link to={'/games/update/' + games._id}> <button> Edit   {games.lastName}</button>  </Link><br/><br/>
+                            </p>
+                            </div>
                     )
                     
                 })

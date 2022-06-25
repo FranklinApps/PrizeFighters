@@ -5,6 +5,7 @@ body{
   flex-flow:column;
   justify-content: center;
   align-items:center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .blank:not(:hover){
   border: none;
@@ -36,22 +37,19 @@ button:not(:hover){
   color:#8EE4AF;
   background-color: #907163;
   border: none;
-  height: 2rem;
-  width: 5rem;
+  border-radius: 0%;
+  height: 3rem;
+  width: 6rem;
   transition-duration: 400ms;
 }
 button:hover{
   background-color: #8EE4AF;
   color:#907163;
   border: none;
-  height: 4rem;
-  width: 8rem;
+  border-radius: 5%;
+  height: 5rem;
+  width: 9rem;
   transition-duration: 1000ms;
-}
-.container{
-  height: 200px;
-  width: 200px;
-  color: red;
 }
 
 img{
@@ -60,16 +58,35 @@ img{
 }
 
 img:hover{
-  height: 20rem;
-  width: 20rem;
+  height: 12rem;
+  width: 12rem;
   transition-duration: 1000ms;
+  border-radius: 15%;
 }
 
 img:not(:hover){
   height: 40px;
   width: 40px;
+  border-radius: 50%;
   transition-duration: 1000ms;
 }
 .list{
   font-size: small;
+}
+
+.inner{
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.formlist{
+  display: flex;
+  flex-flow:column;
+  align-items: flex-start;
+  justify-content:space-between;
+  height: 20rem;
+  width: 20rem;
+  background-color: black;
 }
